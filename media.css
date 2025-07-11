@@ -101,6 +101,8 @@
     .hero-left{
         height: auto;
         width:auto;
+         margin: auto;
+        margin-top: 40px;
     }
     .hero-right{
         height: auto;
