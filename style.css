@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f5f3ec;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lora', serif;;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*section-nav*/
+.nav-bar{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    height:100px;
+    width:100%;
+    overflow-x: hidden;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#4B2E1D;;
+    font-size: 25px;
+    background-color: rgb(228, 160, 16);;
+   
+}
+.logo{
+    font-size: 35px;
+    font-weight: bolder;
+    color:#4B2E1D;;
+}
+.nav-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.nav-btn a,
+.nav-btn2 a{
+    text-decoration: none;
+    color:#4B2E1D;;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ham{
+    display: none;
+    color: #4B2E1D;;
+}
+#cross{
+    color: #4B2E1D;
+}
+.nav-bar2{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:sticky;
+    top: 0;
+    z-index:1000;
+    height:300px;
+    width: 100%;
+    background-color: rgb(228, 160, 16);
+    color: #4B2E1D;
+}
+.nav-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    margin: auto;
+}
+/* Section-hero*/
+.section-hero{
+    height:500px;
+    width:100%;
+    overflow-x: hidden;
+    overflow: visible;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+ 
+.hero-left {
+  overflow:hidden;
+  overflow-y: auto;
+  position: relative;
+  max-width:400px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.slider {
+  display: flex;
+  width: 100%; 
+  animation: slideX 6s infinite;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+ .hero-right{
+    height:450px;
+    width:50%;
+    margin:auto;
+   
+ }
+ .hero-right h1{
+    padding: 20px;
+    font-size: 40px;
+ }
+ .hero-right p{
+    padding: 17px;
+    font-size:20px;
+ }
+ .btn{
+    height: 80px;
+    width:200px; 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+ }
+ .hero-right h2{
+    padding-left:13px;
+ }
+ .flip{
+     height:35px;
+     width:35px;
+     border-radius: 50%;
+     background-image:url(assest/flipkart.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .amaz{
+     height:35px;
+     width:35px;
+     border-radius: 50%;
+     background-image:url(assest/amazon.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .messo{
+    height: 35px;
+     width: 35px;
+     border-radius: 50%;
+     background-image:url(assest/Meesho_logo.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ /*product*/
+  .section-product{
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+ .pro {
+  height: 300px;
+  width: 90%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Shared for both product1 and product2 */
+.product1, .product2 {
+  height: 200px;
+  width: 300px;
+  perspective: 1000px;
+  border: 2px solid black;
+}
+
+.product1-inner, .product2-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.product1:hover .product1-inner {
+  transform: rotateY(180deg);
+}
+.product2:hover .product2-inner {
+  transform: rotateY(180deg);
+}
+.product1-front, .product1-back,
+.product2-front, .product2-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.product1-front, .product2-front {
+  background-color: yellow;
+}
+.product1-back, .product2-back {
+  background-color: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
