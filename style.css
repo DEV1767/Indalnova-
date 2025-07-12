@@ -259,13 +259,14 @@ html{
   align-items:center;
 }
 .re1{
-  height: 200px;
-  width:80%;
+  height:120px;
+  width:90%;
   border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
+  padding:3px;
 }
 .pic1{
   height:150px;
