@@ -55,7 +55,7 @@
     }
 }
 /*phones*/
-@media screen and (max-width:450px){
+@media screen and (max-width:420px){
     .nav-bar{
       gap: 10px;
       height: 65px;
