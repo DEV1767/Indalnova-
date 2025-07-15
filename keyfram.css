@@ -1,8 +1,0 @@
-@keyframes slideX {
-  0%, 45% {
-    transform: translateX(0%);
-  }
-  55%, 100% {
-    transform: translateX(-100%);
-  }
-}
