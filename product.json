@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Neem & Aloevera Facewash",
+        "image":"assest/Neem alovera fashwash.jpg",
+        "Weight":"100g",
+        "offer":"none"
+    }
+    ,
+    {
+        "id":2,
+        "name":"Ubtan Facewash",
+        "image":"assest/ubtan fashwash.jpg",
+        "Weight":"100g",
+        "offer":"none"
+    }
+]

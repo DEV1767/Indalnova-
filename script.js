@@ -51,4 +51,47 @@ const cards=document.querySelectorAll(".cards")
         card.classList.remove("flipped")
     })
  })
- 
+
+ fetch('product.json')
+  .then(res => res.json())
+  .then(products => {
+    const container = document.getElementById('product');
+
+    products.forEach(product => {
+      // outer wrapper
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('product-card');
+
+      // inner HTML
+      wrapper.innerHTML = `
+        <div class="cards">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="${product.image}" alt="${product.name}" />
+              <h3>${product.name}</h3>
+              <span class="view">View details...</span>
+              <div class="btn1">
+                <a href="${product.flipkartLink}" target="_blank">
+                  <button id="flip">
+                    <img src="assest/flipkart.png" alt="flipkart" />
+                  </button>
+                </a>
+                <a href="${product.meeshoLink}" target="_blank">
+                  <button id="mess">
+                    <img src="assest/Meesho_logo.png" alt="meesho" />
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>${product.discount}</h3>
+              <p>${product.description}</p>
+              <button class="back">Back</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(wrapper);
+    });
+  });
