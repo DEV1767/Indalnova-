@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "ubtan-Fashwash (100g)",
+    "image": "assest/ubtn1.webp",
+    "weight": "100g",
+    "offer": "none",
+    "flipkartLink": "",
+    "meeshoLink": "https://www.meesho.com/face-wash-for-men-women-ubtan-face-wash-tan-removal-anti-acne-pimple-control-oily-dry-skin-face-wash-foaming-oil-free-brightening-de-tan-face-wash/p/9i0sff?ms=2&source=Meri+Shop"
+  },
+  {
+    "id": 2,
+    "name": "Neem & Alovera Fashwash (100g)",
+    "image": "assest/neem1.webp",
+    "weight": "100g",
+    "offer": "none",
+    "flipkartLink": "",
+    "meeshoLink": "https://www.meesho.com/neem-face-wash-for-men-women-aloe-vera-neem-foaming-face-wash-tan-removal-acne-pimples-oily-skin-control-best-face-wash-for-all-skin-types/p/9i188s"
+  }
+]
